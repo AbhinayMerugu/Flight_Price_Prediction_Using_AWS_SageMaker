@@ -275,11 +275,11 @@ st.title(":red[Flight Price Prediction Tool]")
 
 # user inputs
 airline = st.selectbox(
-    "Airline:",
+    "Airline",
     options=X_train.airline.unique()
 )
 
-doj = st.date_input("Date of Journey:")
+doj = st.date_input("Date of Journey")
 
 source = st.selectbox(
     "Source",
@@ -291,23 +291,23 @@ destination = st.selectbox(
     options=X_train.destination.unique()
 )
 
-dep_time = st.time_input("Departure Time:")
+dep_time = st.time_input("Departure Time")
 
-arrival_time = st.time_input("Arrival Time:")
+arrival_time = st.time_input("Arrival Time")
 
 duration = st.number_input(
-    "Duration(Minutes):",
+    "Duration(Minutes)",
     min_value=60,
     step=30
 )
 
 total_stops = st.selectbox(
-    "Total Stops:",
+    "Total Stops",
     options=X_train["total_stops"].unique()
 )
 
 additional_info = st.selectbox(
-    "Additional Info:",
+    "Additional Info",
     options=X_train.additional_info.unique()
 )
 
