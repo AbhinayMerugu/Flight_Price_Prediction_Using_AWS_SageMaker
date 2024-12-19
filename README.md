@@ -31,4 +31,4 @@ This project involves building a machine learning model to predict flight ticket
 ## Technologies Used  
 - **Cloud Tools**: AWS SageMaker, EC2, S3, Boto3  
 - **Libraries**: XGBoost, scikit-learn, Pandas, NumPy, Streamlit, Feature-engine, Matplotlib, Seaborn, SciPy  
-"""
+
